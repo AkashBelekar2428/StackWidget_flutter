@@ -25,7 +25,28 @@ class stackScreen extends StatelessWidget{
      appBar: AppBar(
        title: Text("Stack Widget"),
      ),
-     body: Text("Hello!!!!"),
+     body: Container(
+       width: 300,
+       height: 300,
+       child: Stack(
+         children: [
+           Positioned(
+             left: 21,
+             top: 21,
+             child: Container(
+               width: 200,
+               height: 200,
+               color: Colors.blueGrey,
+             ),
+           ),
+           Container(
+             width: 160,
+             height: 160,
+             color: Colors.greenAccent,
+           )
+         ],
+       ),
+     ),
    );
   }
 }
